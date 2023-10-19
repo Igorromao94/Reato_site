@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/imagens/Logomarca-Reato-Sem-fundo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>REATO - Home</title>
+</head>
+<body>
+    <header>
+        <div class="limitador">
+            <div class="img_Logo">
+                <h1>
+                    <img id="img_logotipo" src="imagens/Logomarca Reato - Sem fundo.png" alt="logo reato">
+                </h1>
+            </div>
+
+            <div id="menu_suspenso" class="menu_suspenso">
+                <div id="container_barras" onclick="abre_fecha_menu()" class="container_barras">
+                    <div id="barra1" class="barras barra1"></div>
+                    <div id="barra2" class="barras barra2"></div>
+                    <div id="barra3" class="barras barra3"></div>
+                </div>
+                
+                <nav id="navegacao" class="ancoras">
+                    <div id="container_links" class="container_links">
+                        <a onclick="abre_fecha_menu()" id="link1" class="links" href="#">Empresa</a>
+                        <a onclick="abre_fecha_menu()" id="link2" class="links" href="#Sobre_nos">Sobre</a>
+                        <a onclick="abre_fecha_menu()" id="link3" class="links" href="#convenios">Convenios</a>
+                        <a onclick="abre_fecha_menu()" id="link4" class="links" href="#contato">Contato</a>
+                        <a onclick="abre_fecha_menu()" id="link5" class="links" href="#localizacao">Localização</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="Apresentacao_inicial_slider"><!-- terminar passagem automatica dos slides -->
+            <div class="slider">
+                <div class="slids">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide imagem1 first"></div>
+                    <div class="slide imagem2"></div>
+                    <div class="slide imagem3"></div>
+                    <div class="slide imagem4"></div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                
+                <div class="manual-navgation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="limitador">
+            <div id="Sobre_nos" class="caixa_padrao sobre">
+                <h2>Sobre Nos</h2>
+                <div class="container_objetivos">
+                    <div class="cards_objetivos missao">
+                        <h3>Nossa Missão</h3>
+                        <p>
+                            Promover <strong>atendimento</strong> de <strong>qualidade</strong> com práticas baseadas em <strong>evidências científicas</strong>.
+                        </p>
+                    </div>
+
+                    <div class="cards_objetivos Valores">
+                        <h3>Nossos Valores</h3>
+                        <p>
+                            Trabalho <strong>transdiciplinar</strong>, <strong>ético</strong> e <strong>comprometido</strong> com resultados, <strong>valorização</strong> e <strong>crescimento pessoal</strong>.
+                        </p>
+                    </div>
+
+                    <div class="cards_objetivos Visao">
+                        <h3>Nossa Visão</h3>
+                        <p>
+                            Tornar-se a <strong>clinica de referência</strong> no <strong>estado</strong> em <strong>desenvolvimento infantil</strong>, garantindo <strong>equipe qualificada</strong> e <strong>atendimento humanizado</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="convenios" class="caixa_padrao convenios">
+                <h2>Atendimentos Coveniados</h2>
+                <div class="container_cards_convenios">
+                    <div class="cards_convenios">
+                        <img class="convenios_logo" src="imagens/logo_GEAP.png" alt="logo GEAP">
+                    </div>
+                    
+                    <div class="cards_convenios">
+                        <img class="convenios_logo" src="imagens/Bradesco-Saúde-Logo.png" alt="">
+                    </div>
+                    
+                    <div class="cards_convenios">
+                        <img class="convenios_logo" src="imagens/cassi-logo.png" alt="">
+                    </div>
+
+                    <div class="cards_convenios">
+                        <img class="convenios_logo" src="imagens/camed.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="" class="caixa_padrao convenios">
+                <h2>
+                    Atendimentos não Conveniados
+                </h2>
+                <div class="container_cards_convenios">
+                    <div class="cards_convenios">
+                        <img class="convenios_logo" src="imagens/unimed nacional.png" alt="logo UNIMED nacional">
+                    </div>
+
+                    <div class="cards_convenios">
+                        <img class="convenios_logo" src="imagens/unimed-maceio.png" alt="logo UNIMED Maceió">
+                    </div>
+                    
+                    <div class="cards_convenios">
+                        <img class="convenios_logo" src="imagens/unimed-terezina.png" alt="logo UNIMED Terezina">
+                    </div>
+                    
+                    <div class="cards_convenios">
+                        <img class="convenios_logo" src="imagens/norte de minas.png" alt="logo UNIMED Norte de minas">
+                    </div>
+                    
+                    <div class="cards_convenios">
+                        <img class="convenios_logo" src="imagens/prefeitura de maceio.png" alt="logo Prefeitura de Maceió">
+                    </div>
+                </div>
+            </div>
+
+            <div id="contato" class="contato caixa_padrao">
+                <h2>Contato</h2>
+                <div class="disposicao_visial_contato">
+                    <div class="Contatos">
+                        <h3>Telefones  e redes sociais</h3>
+                        <div class="organizacao_links">
+                            <a target="_blank" href="tel:+558233134972">
+                                <img class="img_logo_contato" src="imagens/telefone.png" alt=""> 
+                                    Tel: +55 (82) 3313-4972
+                            </a>
+        
+                            <a target="_blank" href="tel:+55829189-9552">
+                                <img class="img_logo_contato" src="imagens/celuluar.png" alt=""> Cel: +55(82)9189-9552
+                            </a>
+                        
+                            <a target="_blank" href="https://www.instagram.com/reatodesenvolvimentoinfantil/">
+                                <img class="img_logo_contato" src="imagens/instagram.png" alt=""> @reatodesenvolvimentoinfantil
+                            </a>
+                            
+                            <a target="_blank" href="https://www.facebook.com/Reatonucleodereabilitacao">
+                                <img class="img_logo_contato" src="imagens/facebook logo.png" alt="">
+                                Facebook
+                            </a>
+                            
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=558291899512&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20Site%20da%20REATO%20gostaria%20de%20falar%20com%20voc%C3%AAs.">
+                                <img class="img_logo_contato" src="imagens/whatsapp.lgog.png" alt="">
+                                Whatsapp
+                            </a>
+
+                            <a target="_blank" href="mailto:reatonucleodereabilitacao@gmail.com?Subject=Olá Reato&Body=algo aqui">
+                                <img class="img_logo_contato" src="imagens/email-logo.png" alt="">
+                                reatonucleodereabilitacao@gmail.com 
+                            </a>
+                        </div>
+                    </div>
+                    <!--Area de envio de email-->
+                    <form action="mailto:reatonucleodereabilitacao@gmail.com?Subject=Olá Reato" method="post" enctype="text/plain" class="email-container">
+                        <h3>Mande um email agora para a REATO</h3>
+                        <div class="email-organizacao nome-completo">
+                            <label for="">Nome Compoleto</label>
+                            <input name="Nome" type="text" required>
+                        </div>
+                        
+                        <div class="email-organizacao email">
+                            <label for="">E-mail</label>
+                            <input name="Email" type="email" required>
+                        </div>
+    
+                        <div class="email-organizacao email_conteudo">
+                            <label for="">Menssagem</label>
+                            <textarea name="Email" id="conteudo" placeholder="Digite aqui uma pergunta, comentario, critica contrutiva ou uma reclamação" required></textarea>
+                        </div>
+                        <button class="botao_enviar" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div id="localizacao" class="caixa_padrao">
+                <h2>Localização</h2>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15732.556963757761!2d-35.734659581604106!3d-9.669141994394362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145b70f996c2b%3A0xe95e890658008ec5!2sReato%20N%C3%BAcleo%20de%20Desenvolvimento%20Infantil%20e%20Terapia%20Comportamental!5e0!3m2!1spt-BR!2sbr!4v1695325967632!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="limitador">
+            
+            <p>site produzido por Igor de Oliveira Romão &copy;</p>
+        </div>
+    </footer>
+
+    <button id="zap" class="botao_zap" >
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=558291899512&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20Site%20da%20REATO%20gostaria%20de%20falar%20com%20voc%C3%AAs.">
+        </a>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
