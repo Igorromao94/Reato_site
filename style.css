@@ -36,15 +36,6 @@ body{
     background-color: var(--cinza_reato);
 }
 
-.limitador{
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}
-
 header{
     z-index: 100;
     display: flex;
@@ -60,17 +51,33 @@ header{
     box-shadow: 3px 0 5px gray;
 }
 
+.limitador{
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.organizador_header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
 #img_logotipo{
     width: 150px;
 }
 
-
 /* inicio de menu suspenso*/
 .menu_suspenso{
-    position: absolute;
-    top: 38%;
-    right: 10vw;
-
+    position: relative;
     display: flex;
     flex-flow: column;
     width: auto;
@@ -81,7 +88,11 @@ header{
     flex-flow: column nowrap;
     justify-content: space-between;
     
-    width: 50px;
+    max-width: 60px;
+    min-width: 50px;
+    max-height: 50px;
+
+    width: 6.5vw;
     height: 50px;
 
     align-self: flex-end;
@@ -93,11 +104,15 @@ header{
 .barras{
     width: 100%;
     height: 20%;
+    max-height: 10px;
     background-color: black;
     border-radius: 10px;
 }
 
 .ancoras{
+    position: absolute;
+    top: 50px;
+    right: 1px;
     display: none;
     background-color: var(--azul_reato);
     
