@@ -3,16 +3,6 @@
     src: url(fontes/Roboto-Regular.ttf);
 }
 
-@font-face {
-    font-family: jogo;
-    src: url(fontes/PressStart2P-Regular.ttf);
-}
-
-@font-face {
-    font-family: desenhado;
-    src: url(fontes/Chalk\ Dash.ttf);
-}
-
 :root{
     --azul_reato: #048ABF;
     --amarelo_reato: #F2AE2E;
