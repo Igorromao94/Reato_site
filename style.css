@@ -479,6 +479,10 @@ main{
     z-index: 0;
 }
 
+.cards_convenios h3{
+    text-align: center;
+}
+
 .cards_convenios:hover{
     transform: scale(1.1);
     z-index: 1;
@@ -767,14 +771,14 @@ footer p {
     }
 
     .Contatos{
-        width: 49%;
-        height: 360px;
+        width: 100%;
+        height: auto;
         justify-content: flex-start;
     }
 
     form{
-        width: 49%;
-        height: 360px;
+        width: 100%;
+        height: auto;
     }
 
 
@@ -789,14 +793,14 @@ footer p {
     }
 
     .Contatos{
-        width: 49%;
-        height: 360px;
+        width: 100%;
+        height: auto;
         justify-content: flex-start;
     }
 
     form{
-        width: 49%;
-        height: 360px;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -809,14 +813,14 @@ footer p {
     }
 
     .Contatos{
-        width: 49%;
-        height: 360px;
+        width: 100%;
+        height: auto;
         justify-content: flex-start;
     }
 
     form{
-        width: 49%;
-        height: 360px;
+        width: 100%;
+        height: auto;
     }
 } 
 
@@ -829,13 +833,13 @@ footer p {
     }
 
     .Contatos{
-        width: 49%;
-        height: 360px;
+        width: 100%;
+        height: auto;
         justify-content: flex-start;
     }
 
     form{
-        width: 49%;
-        height: 360px;
+        width: 100%;
+        height: auto;
     }
 } 
