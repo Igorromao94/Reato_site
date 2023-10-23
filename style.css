@@ -65,10 +65,19 @@ header{
 .organizador_header{
     width: 100%;
     height: 100%;
+
+    padding: 0 20px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.organizador_header a{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #img_logotipo{
@@ -318,19 +327,18 @@ main{
 }
 
 .imagem1{
-    background-image: url("imagens/administração\ completa.jpg");
+    background-image: url("imagens/baner3.jpg");
     background-size: cover;
-    
 }
 
 .imagem2{
-    background-image: url("imagens/Imagem\ do\ WhatsApp\ de\ 2023-09-20\ à\(s\)\ 18.30.47_1d6f5d5a.jpg");
+    background-image: url("");
     background-size: cover;
 }
 
-.imagem3{background-image: url("imagens/Imagem\ do\ WhatsApp\ de\ 2023-09-20\ à\(s\)\ 18.30.52_aadccb07.jpg");}
+.imagem3{background-image: url("");}
 
-.imagem4{background-image: url("imagens/Imagem\ do\ WhatsApp\ de\ 2023-09-20\ à\(s\)\ 18.30.56_3e0a38af.jpg");}
+.imagem4{background-image: url("");}
 
 
 .manual-navgation{
@@ -488,89 +496,89 @@ main{
     width: 100%;
 }
 
-/*contato*/
+/*---------------------------------------- contato*/
+
 .contato{
     width: 100%;
     height: auto;
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.disposicao_visial_contato{
+.alinhador_contatos_email{
     width: 100%;
-    height: 37vh;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    flex-flow: column;
     align-items: center;
+    justify-content: center;
 }
 
 .Contatos{
-    margin: 0 20px;
-    padding: 0 20px;
-    height: 100%;
     display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    border-right: solid blue 1px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .Contatos h3{
-    margin: 20px 0;
-    align-self: center;
     text-align: center;
-    text-transform: uppercase;
+    width: 100%;
+    margin:20px 0;
 }
 
 .organizacao_links{
-    width: 100%;
-    height: 60%;
+    margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-evenly;
-    margin: auto auto;
+    justify-content: center;
     row-gap: 10px;
 }
 
-.Contatos a{
+.organizacao_links a{
     display: flex;
     flex-flow: row nowrap;
-    column-gap: 6px;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    transition: 0.5s ease;
-    align-self: center;
+    font-size: 18px;
+    column-gap: 5px;
 }
 
-.Contatos a:hover{
-    transform: scale(1.2);
+.organizacao_links a:hover{
+    scale: 1.1;
 }
 
-.Contatos a:last-child:hover{
-    transform: translateX(-20px) scale(1.2);
+#link_menor{
+    font-size: 12px;
+}
+
+#link_menor:hover{
+    scale: 1.2;
 }
 
 .img_logo_contato{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15;
 }
 
-/*envio de email direto do site*/
+
+/*-------------------------------------------envio de email direto do site*/
 
 form{
     width: 100%;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: baseline;
 }
 
 .email-container h3{
     margin: 20px 0;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .email-organizacao{
@@ -613,6 +621,51 @@ textarea{
     box-shadow: #014058 5px 5px 5px;
 }
 
+/* Área do icone de localização*/
+
+.mapa{
+    height: 55vh;
+}
+
+.container_venha_ate_nos{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_venha_ate_nos h3{
+    text-align: center;
+}
+
+.links_venham{
+    width: 100%;
+    padding: 10px 0;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icone{
+    width: 60px;
+    height: 60px;
+}
+
+.waze{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
 /*Botão do zap*/
 .img_zap{
     width: 50px;
@@ -626,7 +679,7 @@ textarea{
     
     position: fixed;
     bottom: 100px;
-    left: 40px;
+    left: 20px;
 
     background-color: transparent;
     border: none;
@@ -646,7 +699,7 @@ textarea{
     width: 50px;
     height: 50px;
 
-    background-image: url("imagens/icone_de_chat.png");
+    background-image: url("imagens/whatsapp.lgog.png");
     background-size: contain;
     animation: chamar_atencao 1s infinite ease;
 }
@@ -679,7 +732,8 @@ textarea{
 
 footer{
     width: 100vw;
-    height: 3vh;
+    height: auto;
+    padding: 5px;
     display: flex;
     
     background-color: rgb(194, 47, 47);
@@ -689,317 +743,99 @@ footer p {
     text-align: center;
 }
 
-/* Cada tela*/
+/* ------------------------------------------------------ Cada tela*/
 
 @media (min-width:120px) and (max-width:320px){
-
-    .botao_zap{
-        z-index: 1000000;
+    .disposicao_visial_contato{
+        flex-flow: column;
+        height: auto;
     }
+}
 
-    .Menu_de_celular{
-        right: 20px;
-    }
-
-    .manual-navgation{
-        z-index: 12;
-    }
-
-
-    .cards_objetivos p{
-        font-size: 14px;
-    }
-
-    .cards_convenios{
-        width: 80px;
-        height: 80PX;
-        padding: 5PX;
-    
-        display: grid;
-        flex-flow:column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-    
-        border: solid gray 2px;
-        border-radius:10px;
-        box-shadow: black 2px 2px 10px;
-        transition: 0.5s ease;
-    }
-
+@media (max-height:500px) {
     #img_logotipo{
-        width: 100px;
+        width: 75px;
     }
-
-    .Menu_suspenso_inicial{
-        right: 5vw;
-    }
-
-    .email-organizacao input {
-        width: 100%;
-    }
-
-    .disposicao_visial_contato{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Contatos{
-        border: none;
-        margin: 0;
-    }
-
-    .Contatos a{
-        font-weight: bold;
-        font-size: 14px;
-    }
-
-    .Contatos a:last-child{
-        font-size: 10px;
-    }
-
-    .Contatos a:last-child:hover{
-        transform: scale(1.2);
-    }
-
-    .mapa{
-        height: 50vh;
-    }
-
-}
-
-@media (min-width:320px) and (max-width:480px){
-    .Menu_suspenso_inicial{
-        right: 5vw;
-    }
-
-    .imagem4{
-        background-image: url("imagens/Imagem\ do\ WhatsApp\ de\ 2023-09-20\ à\(s\)\ 18.30.52_aadccb07.jpg");
-    }
-
-    .cards_convenios{
-        width: 80px;
-        height: 80PX;
-        padding: 5PX;
-    
-        display: grid;
-        flex-flow:column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        background-color: #ffffff;
-    
-        border-radius:10px;
-        box-shadow: black 2px 2px 10px;
-        transition: 0.5s ease;
-    }
-
-    .cards_convenios:hover{
-        transform: scale(2.2);
-    }
-
-    .email-organizacao input {
-        width: 100%;
-    }
-
-    .disposicao_visial_contato{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Contatos{
-        border: none;
-    }
-
-    .Contatos a{
-        font-weight: bold;
-    }
-
-    .Contatos a:last-child{
-        font-size: 10px;
-    }
-
-    .Contatos a:last-child:hover{
-        transform: scale(1.2);
-    }
-
-    .mapa{
-        height: 50vh;
-    }
-}
-
-@media (min-width:480px) and (max-width:600px) {
-    .Menu_suspenso_inicial{
-        right: 5vw;
-    }
-
-    .email-organizacao input {
-        width: 100%;
-    }
-
-    .cards_convenios{
-        width: 80px;
-        height: 80PX;
-        padding: 5PX;
-    
-        display: grid;
-        flex-flow:column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        background-color: #ffffff;
-    
-        border-radius:10px;
-        box-shadow: black 2px 2px 10px;
-        transition: 0.5s ease;
-    }
-
-    .disposicao_visial_contato{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Contatos{
-        border: none;
-    }
-
-    .Contatos a{
-        font-weight: bold;
-    }
-
-    .Contatos a:last-child{
-        font-size: 10px;
-    }
-
-    .Contatos a:last-child:hover{
-        transform: scale(1.2);
-    }
-
-    .mapa{
-        height: 50vh;
-    }
-     /* smartphones, Android phones, landscape iPhone */ 
-    }
-
-@media (min-width:600px) and (max-width:801px) {
-    .Menu_suspenso_inicial{
-        right: 5vw;
-    }
-
-    .email-organizacao input {
-        width: 100%;
-    }
-
-    .disposicao_visial_contato{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Contatos{
-        border: none;
-    }
-
-    .Contatos a{
-        font-weight: bold;
-    }
-
-    .Contatos a:last-child{
-        font-size: 10px;
-    }
-
-    .Contatos a:last-child:hover{
-        transform: scale(1.2);
-    }
-
-    .mapa{
-        height: 50vh;
-    } /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)  */
 }
     
 @media (min-width:801px) and (max-width:1025px) { 
-    .Menu_suspenso_inicial{
-        right: 5vw;
-    }
-
-    .email-container{
-        width: 40%;
-    }
-
-    .email-organizacao input {
+    .alinhador_contatos_email{
         width: 100%;
-    }
-
-    .disposicao_visial_contato{
-        width: 100%;
-        height: 50vh;
-        display: flex;
+        height: auto;
         flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .organizacao_links{
-        height: 60%;
-        display: flex;
+        justify-content: space-between;
     }
 
     .Contatos{
-        margin: 0;
-        padding: 0;
-        width: 40%;
-        height: 100%;
+        width: 49%;
+        height: 360px;
+        justify-content: flex-start;
     }
 
-    .Contatos a{
-        font-weight: bold;
+    form{
+        width: 49%;
+        height: 360px;
     }
 
-    .Contatos a:last-child{
-        font-size: 10px;
-    }
 
-    .Contatos a:last-child:hover{
-        transform: scale(1.2);
-    }
-
-    .mapa{
-        height: 50vh;
-    }/* tablet, landscape iPad, lo-res laptops ands desktops  */
 }
 
-@media (min-width:1025px) and (max-width:1281px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1025px) and (max-width:1281px) { 
+    .alinhador_contatos_email{
+        width: 100%;
+        height: auto;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .Contatos{
+        width: 49%;
+        height: 360px;
+        justify-content: flex-start;
+    }
+
+    form{
+        width: 49%;
+        height: 360px;
+    }
+}
+
 @media (min-width:1281px) {
-    .mapa{
-        height: 50vh;
-    } /* hi-res laptops and desktops */ }
-
-@media (max-height:412px) {
-    #img_logotipo{
-        width: 70px;
-        margin-top: 15px;
+    .alinhador_contatos_email{
+        width: 100%;
+        height: auto;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 
-    .Menu_suspenso_aberto{
-        top: auto;
+    .Contatos{
+        width: 49%;
+        height: 360px;
+        justify-content: flex-start;
     }
 
-    .imagem1{
-        zoom: -1.2;
+    form{
+        width: 49%;
+        height: 360px;
+    }
+} 
+
+@media (max-height:430px) {
+    .alinhador_contatos_email{
+        width: 100%;
+        height: auto;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .Contatos{
+        width: 49%;
+        height: 360px;
+        justify-content: flex-start;
+    }
+
+    form{
+        width: 49%;
+        height: 360px;
     }
 } 

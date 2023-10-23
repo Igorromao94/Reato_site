@@ -13,7 +13,7 @@
             <div class="organizador_header">
                 <div class="img_Logo">
                     <h1>
-                        <img id="img_logotipo" src="imagens/Logomarca Reato - Sem fundo.png" alt="logo reato">
+                        <a href="index.html"><img id="img_logotipo" src="imagens/Logomarca Reato - Sem fundo.png" alt="logo reato"></a>
                     </h1>
                 </div>
     
@@ -26,7 +26,7 @@
                     
                     <nav id="navegacao" class="ancoras">
                         <div id="container_links" class="container_links">
-                            <a onclick="abre_fecha_menu()" id="link1" class="links" href="#">Empresa</a>
+                            <a onclick="abre_fecha_menu()" id="link1" class="links" href="#">Home</a>
                             <a onclick="abre_fecha_menu()" id="link2" class="links" href="#Sobre_nos">Sobre</a>
                             <a onclick="abre_fecha_menu()" id="link3" class="links" href="#convenios">Convenios</a>
                             <a onclick="abre_fecha_menu()" id="link4" class="links" href="#contato">Contato</a>
@@ -117,36 +117,9 @@
                 </div>
             </div>
 
-            <div id="" class="caixa_padrao convenios">
-                <h2>
-                    Atendimentos não Conveniados
-                </h2>
-                <div class="container_cards_convenios">
-                    <div class="cards_convenios">
-                        <img class="convenios_logo" src="imagens/unimed nacional.png" alt="logo UNIMED nacional">
-                    </div>
-
-                    <div class="cards_convenios">
-                        <img class="convenios_logo" src="imagens/unimed-maceio.png" alt="logo UNIMED Maceió">
-                    </div>
-                    
-                    <div class="cards_convenios">
-                        <img class="convenios_logo" src="imagens/unimed-terezina.png" alt="logo UNIMED Terezina">
-                    </div>
-                    
-                    <div class="cards_convenios">
-                        <img class="convenios_logo" src="imagens/norte de minas.png" alt="logo UNIMED Norte de minas">
-                    </div>
-                    
-                    <div class="cards_convenios">
-                        <img class="convenios_logo" src="imagens/prefeitura de maceio.png" alt="logo Prefeitura de Maceió">
-                    </div>
-                </div>
-            </div>
-
             <div id="contato" class="contato caixa_padrao">
-                <h2>Contato</h2>
-                <div class="disposicao_visial_contato">
+                <h2>Contatos</h2>
+                <div class="alinhador_contatos_email">
                     <div class="Contatos">
                         <h3>Telefones  e redes sociais</h3>
                         <div class="organizacao_links">
@@ -172,38 +145,46 @@
                                 <img class="img_logo_contato" src="imagens/whatsapp.lgog.png" alt="">
                                 Whatsapp
                             </a>
-
-                            <a target="_blank" href="mailto:reatonucleodereabilitacao@gmail.com?Subject=Olá Reato&Body=algo aqui">
+    
+                            <a id="link_menor" target="_blank" href="mailto:reatonucleodereabilitacao@gmail.com?Subject=Olá Reato&Body=algo aqui">
                                 <img class="img_logo_contato" src="imagens/email-logo.png" alt="">
                                 reatonucleodereabilitacao@gmail.com 
                             </a>
                         </div>
                     </div>
-                    <!--Area de envio de email-->
+    
                     <form action="mailto:reatonucleodereabilitacao@gmail.com?Subject=Olá Reato" method="post" enctype="text/plain" class="email-container">
-                        <h3>Mande um email agora para a REATO</h3>
+                        <h3>Fale conosco</h3>
                         <div class="email-organizacao nome-completo">
-                            <label for="">Nome Compoleto</label>
-                            <input name="Nome" type="text" required>
+                            <label for="name">Nome Completo</label>
+                            <input id="name" name="Nome" type="text" required>
                         </div>
                         
                         <div class="email-organizacao email">
-                            <label for="">E-mail</label>
-                            <input name="Email" type="email" required>
+                            <label for="email">E-mail</label>
+                            <input id="email" name="Email" type="email" required>
                         </div>
     
                         <div class="email-organizacao email_conteudo">
-                            <label for="">Menssagem</label>
+                            <label for="conteudo">Mensagem</label>
                             <textarea name="Email" id="conteudo" placeholder="Digite aqui uma pergunta, comentario, critica contrutiva ou uma reclamação" required></textarea>
                         </div>
                         <button class="botao_enviar" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
-            <div id="localizacao" class="caixa_padrao">
+            
+            <div id="localizacao" class="Localizacao caixa_padrao">
                 <h2>Localização</h2>
                 <div class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15732.556963757761!2d-35.734659581604106!3d-9.669141994394362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145b70f996c2b%3A0xe95e890658008ec5!2sReato%20N%C3%BAcleo%20de%20Desenvolvimento%20Infantil%20e%20Terapia%20Comportamental!5e0!3m2!1spt-BR!2sbr!4v1695325967632!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="container_venha_ate_nos">
+                    <h3>Click em um link para vir para REATO</h3>
+                    <div class="links_venham">
+                        <a class="waze" href="https://waze.com/ul/h7nq8gpf31"><img class="icone" src="imagens/waze.png" alt="logo do Waze">waze</a>
+                        <a class="waze" href="https://maps.app.goo.gl/8BdKRezeRVamNu268"><img class="icone" src="imagens/google-maps.png" alt="logo do google maps">Google Maps</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,8 +192,8 @@
 
     <footer>
         <div class="limitador">
-            
             <p>Site produzido por Igor de Oliveira Romão &copy;</p>
+            <a href="pagina_de_creditos.html">Creditos</a>
         </div>
     </footer>
 
