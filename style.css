@@ -317,18 +317,18 @@ main{
 }
 
 .imagem1{
-    background-image: url("imagens/baner3.jpg");
+    background-image: url("imagens/baner1.jpg");
     background-size: cover;
 }
 
 .imagem2{
-    background-image: url("");
+    background-image: url("imagens/baner2.jpg");
     background-size: cover;
 }
 
-.imagem3{background-image: url("");}
+.imagem3{background-image: url("imagens/baner3.jpg");}
 
-.imagem4{background-image: url("");}
+.imagem4{background-image: url("imagens/baner4.jpg");}
 
 
 .manual-navgation{
